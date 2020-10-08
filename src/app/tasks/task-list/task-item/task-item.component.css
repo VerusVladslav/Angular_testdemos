@@ -1,0 +1,15 @@
+.margins{
+  margin: 10px;
+}
+
+.card-blue{
+  border: 2px solid blue;
+}
+
+.card-yllow{
+  border: 2px solid yellow;
+}
+
+.card-green{
+  border: 2px solid green;
+}

@@ -1,0 +1,20 @@
+<div class="card margins"
+[ngClass]="{
+  'card-blue': NotReviews === true ,
+  'card-yllow': NotDones === true,
+  'card-green': Dones === true
+}" >
+  <div class="card-body">
+    <h5 class="card-title">{{currentTask.theme}}</h5>
+    <p class="card-text">{{currentTask.textwork}}</p>
+    <p class="card-text"><small class="text-muted">{{currentTask.date}}</small></p>
+    <div *ngIf="NotReviews===true" class=" btn btn-primary"   (click)="Done(currentTask.id)">
+     Upload
+    </div>
+    <div *ngIf="NotDones===true" class=" btn btn-primary"   (click)="Review(currentTask.id)">
+
+     Done
+    </div>
+  </div>
+
+</div>

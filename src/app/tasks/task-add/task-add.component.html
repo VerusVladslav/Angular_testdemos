@@ -1,0 +1,25 @@
+
+<form  #addForm="ngForm" (ngSubmit)="sendAddTask(); addForm.reset()">
+
+
+  <div class="forms">
+
+
+  <div class="form-group ">
+    <label for="Title">Task Theme</label>
+      <input [(ngModel)]="newTheme" type="text" class="form-control" id="title" name="title" aria-describedby="Title"
+        placeholder="Title">
+   </div>
+
+  <div class="form-group">
+    <label for="Description">Description</label>
+    <input [(ngModel)]= "newtextwork" type="text" class="form-control" name="Description" id="Description" placeholder="Description">
+  </div>
+
+  <div class="form-group">
+    <label for="Date">Date</label>
+    <input [(ngModel)]= "newDate" type="date" class="form-control" name="Date" id="Date">
+  </div>
+  <button type="submit"  class="btn btn-primary">Add</button>
+  </div>
+  </form>
